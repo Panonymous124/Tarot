@@ -358,9 +358,9 @@ particleTexture = generateParticleTexture();
         const card = new THREE.Mesh(geo, materials);
         
         // Tính toán vị trí vòng tròn cho 78 lá
-        const angle = (i / TAROT_DATA.length) * Math.PI * 2;
-        card.position.set(Math.sin(angle) * CONFIG.radius, 0, Math.cos(angle) * CONFIG.radius);
-        card.lookAt(0, 0, 0);
+const angle = (i / TAROT_DATA.length) * Math.PI * 2;
+card.position.set(Math.sin(angle) * CONFIG.radius, 0, Math.cos(angle) * CONFIG.radius);
+card.lookAt(0, 0, 0);
         
         // Lưu data để khi chọn bài sẽ hiện đúng tên/ý nghĩa
         card.userData = { id: i, data: data, isPicked: false };
