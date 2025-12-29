@@ -128,38 +128,39 @@
     <script>
         // --- DATA ---
         const TAROT_DATA = [
-    // MAJOR ARCANA (22 lá)
-    { name: "The Fool", url: "https://upload.wikimedia.org/wikipedia/commons/9/90/RWS_Tarot_00_Fool.jpg", meaning: "Khởi đầu mới, tự do." },
-    { name: "The Magician", url: "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg", meaning: "Sáng tạo, ý chí." },
-    { name: "The High Priestess", url: "https://upload.wikimedia.org/wikipedia/commons/8/88/RWS_Tarot_02_High_Priestess.jpg", meaning: "Trực giác, bí ẩn." },
-    { name: "The Empress", url: "https://upload.wikimedia.org/wikipedia/commons/e/e4/RWS_Tarot_03_Empress.jpg", meaning: "Sự trù phú, nuôi dưỡng." },
-    { name: "The Emperor", url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/RWS_Tarot_04_Emperor.jpg", meaning: "Quyền lực, cấu trúc." },
-    { name: "The Hierophant", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/RWS_Tarot_05_Hierophant.jpg", meaning: "Truyền thống, niềm tin." },
-    { name: "The Lovers", url: "https://upload.wikimedia.org/wikipedia/commons/3/3a/RWS_Tarot_06_Lovers.jpg", meaning: "Tình yêu, hòa hợp." },
-    { name: "The Chariot", url: "https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg", meaning: "Chiến thắng, quyết tâm." },
-    { name: "Strength", url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/RWS_Tarot_08_Strength.jpg", meaning: "Can đảm, sức mạnh nội tâm." },
-    { name: "The Hermit", url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/RWS_Tarot_09_Hermit.jpg", meaning: "Soi sáng, chiêm nghiệm." },
-    { name: "Wheel of Fortune", url: "https://upload.wikimedia.org/wikipedia/commons/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg", meaning: "Vận may, định mệnh." },
-    { name: "Justice", url: "https://upload.wikimedia.org/wikipedia/commons/e/e0/RWS_Tarot_11_Justice.jpg", meaning: "Công bằng, sự thật." },
-    { name: "The Hanged Man", url: "https://upload.wikimedia.org/wikipedia/commons/2/2b/RWS_Tarot_12_Hanged_Man.jpg", meaning: "Buông bỏ, góc nhìn mới." },
-    { name: "Death", url: "https://upload.wikimedia.org/wikipedia/commons/d/d7/RWS_Tarot_13_Death.jpg", meaning: "Kết thúc, tái sinh." },
-    { name: "Temperance", url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/RWS_Tarot_14_Temperance.jpg", meaning: "Cân bằng, hòa hợp." },
-    { name: "The Devil", url: "https://upload.wikimedia.org/wikipedia/commons/5/55/RWS_Tarot_15_Devil.jpg", meaning: "Ràng buộc, cám dỗ." },
-    { name: "The Tower", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg", meaning: "Sụp đổ, thức tỉnh." },
-    { name: "The Star", url: "https://upload.wikimedia.org/wikipedia/commons/d/db/RWS_Tarot_17_Star.jpg", meaning: "Hy vọng, niềm tin." },
-    { name: "The Moon", url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/RWS_Tarot_18_Moon.jpg", meaning: "Ảo tưởng, trực giác." },
-    { name: "The Sun", url: "https://upload.wikimedia.org/wikipedia/commons/1/17/RWS_Tarot_19_Sun.jpg", meaning: "Niềm vui, thành công." },
-    { name: "Judgement", url: "https://upload.wikimedia.org/wikipedia/commons/d/dd/RWS_Tarot_20_Judgement.jpg", meaning: "Phán xét, thức tỉnh." },
-    { name: "The World", url: "https://upload.wikimedia.org/wikipedia/commons/f/ff/RWS_Tarot_21_World.jpg", meaning: "Hoàn thành, trọn vẹn." },
+    // 22 Lá Major (Ẩn chính)
+    { name: "The Fool", url: "https://upload.wikimedia.org/wikipedia/commons/9/90/RWS_Tarot_00_Fool.jpg", meaning: "Khởi đầu mới." },
+    { name: "The Magician", url: "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg", meaning: "Sáng tạo." },
+    { name: "The High Priestess", url: "https://upload.wikimedia.org/wikipedia/commons/8/88/RWS_Tarot_02_High_Priestess.jpg", meaning: "Trực giác." },
+    { name: "The Empress", url: "https://upload.wikimedia.org/wikipedia/commons/e/e4/RWS_Tarot_03_Empress.jpg", meaning: "Sung túc." },
+    { name: "The Emperor", url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/RWS_Tarot_04_Emperor.jpg", meaning: "Quyền lực." },
+    { name: "The Hierophant", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/RWS_Tarot_05_Hierophant.jpg", meaning: "Truyền thống." },
+    { name: "The Lovers", url: "https://upload.wikimedia.org/wikipedia/commons/3/3a/RWS_Tarot_06_Lovers.jpg", meaning: "Tình yêu." },
+    { name: "The Chariot", url: "https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg", meaning: "Chiến thắng." },
+    { name: "Strength", url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/RWS_Tarot_08_Strength.jpg", meaning: "Can đảm." },
+    { name: "The Hermit", url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/RWS_Tarot_09_Hermit.jpg", meaning: "Soi sáng." },
+    { name: "Wheel of Fortune", url: "https://upload.wikimedia.org/wikipedia/commons/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg", meaning: "Vận may." },
+    { name: "Justice", url: "https://upload.wikimedia.org/wikipedia/commons/e/e0/RWS_Tarot_11_Justice.jpg", meaning: "Công bằng." },
+    { name: "The Hanged Man", url: "https://upload.wikimedia.org/wikipedia/commons/2/2b/RWS_Tarot_12_Hanged_Man.jpg", meaning: "Buông bỏ." },
+    { name: "Death", url: "https://upload.wikimedia.org/wikipedia/commons/d/d7/RWS_Tarot_13_Death.jpg", meaning: "Tái sinh." },
+    { name: "Temperance", url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/RWS_Tarot_14_Temperance.jpg", meaning: "Cân bằng." },
+    { name: "The Devil", url: "https://upload.wikimedia.org/wikipedia/commons/5/55/RWS_Tarot_15_Devil.jpg", meaning: "Ràng buộc." },
+    { name: "The Tower", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg", meaning: "Sụp đổ." },
+    { name: "The Star", url: "https://upload.wikimedia.org/wikipedia/commons/d/db/RWS_Tarot_17_Star.jpg", meaning: "Hy vọng." },
+    { name: "The Moon", url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/RWS_Tarot_18_Moon.jpg", meaning: "Ảo tưởng." },
+    { name: "The Sun", url: "https://upload.wikimedia.org/wikipedia/commons/1/17/RWS_Tarot_19_Sun.jpg", meaning: "Niềm vui." },
+    { name: "Judgement", url: "https://upload.wikimedia.org/wikipedia/commons/d/dd/RWS_Tarot_20_Judgement.jpg", meaning: "Thức tỉnh." },
+    { name: "The World", url: "https://upload.wikimedia.org/wikipedia/commons/f/ff/RWS_Tarot_21_World.jpg", meaning: "Thành công." },
 
-    // 56 LÁ MINOR ARCANA (Gậy, Ly, Kiếm, Tiền)
-    ...['Wands', 'Cups', 'Swords', 'Pents'].flatMap(suit => 
-        ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14'].map(rank => ({
+    // 56 Lá Minor (Dùng link Wikimedia Commons)
+    ...['Wands', 'Cups', 'Swords', 'Pentacles'].flatMap(suit => {
+        const ranks = ["Ace", "02", "03", "04", "05", "06", "07", "08", "09", "10", "Page", "Knight", "Queen", "King"];
+        return ranks.map(rank => ({
             name: `${rank} of ${suit}`,
-            url: `https://upload.wikimedia.org/wikipedia/commons/${suit}${rank}.jpg`,
-            meaning: `Lá bài thuộc bộ ${suit === 'Wands' ? 'Gậy' : suit === 'Cups' ? 'Ly' : suit === 'Swords' ? 'Kiếm' : 'Tiền'}.`
-        }))
-    )
+            url: `https://upload.wikimedia.org/wikipedia/commons/thumb/${rank === '02' || rank === '03' || rank === '04' || rank === '05' || rank === '06' || rank === '07' || rank === '08' || rank === '09' || rank === '10' ? 'thumb/' : ''}${suit === 'Pentacles' ? 'Coins' : suit}/${rank}_of_${suit === 'Pentacles' ? 'Coins' : suit}.jpg/400px-${rank}_of_${suit === 'Pentacles' ? 'Coins' : suit}.jpg`,
+            meaning: `Thông điệp bộ ${suit}.`
+        }));
+    })
 ];
 
 
