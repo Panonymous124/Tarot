@@ -128,93 +128,92 @@
     <script>
         // --- DATA ---
         const TAROT_DATA = [
-    // MAJOR ARCANA
-    { name: "The Fool", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar00.jpg", meaning: "Khởi đầu mới, tự do." },
-    { name: "The Magician", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar01.jpg", meaning: "Sáng tạo, sức mạnh ý chí." },
-    { name: "The High Priestess", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar02.jpg", meaning: "Trực giác, bí ẩn." },
-    { name: "The Empress", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar03.jpg", meaning: "Nuôi dưỡng, sung túc." },
-    { name: "The Emperor", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar04.jpg", meaning: "Quyền lực, kỷ luật." },
-    { name: "The Hierophant", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar05.jpg", meaning: "Truyền thống, niềm tin." },
-    { name: "The Lovers", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar06.jpg", meaning: "Tình yêu, lựa chọn." },
-    { name: "The Chariot", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar07.jpg", meaning: "Chiến thắng, kiểm soát." },
-    { name: "Strength", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar08.jpg", meaning: "Can đảm, kiên nhẫn." },
-    { name: "The Hermit", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar09.jpg", meaning: "Soi sáng, cô độc." },
-    { name: "Wheel of Fortune", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar10.jpg", meaning: "Vận may, chu kỳ." },
-    { name: "Justice", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar11.jpg", meaning: "Công bằng, sự thật." },
-    { name: "The Hanged Man", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar12.jpg", meaning: "Hy sinh, góc nhìn mới." },
-    { name: "Death", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar13.jpg", meaning: "Kết thúc, tái sinh." },
-    { name: "Temperance", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar14.jpg", meaning: "Cân bằng, điều độ." },
-    { name: "The Devil", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar15.jpg", meaning: "Trói buộc, cám dỗ." },
-    { name: "The Tower", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar16.jpg", meaning: "Sụp đổ, đột ngột." },
-    { name: "The Star", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar17.jpg", meaning: "Hy vọng, chữa lành." },
-    { name: "The Moon", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar18.jpg", meaning: "Ảo tưởng, bất an." },
-    { name: "The Sun", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar19.jpg", meaning: "Niềm vui, thành công." },
-    { name: "Judgement", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar20.jpg", meaning: "Thức tỉnh, phán xét." },
-    { name: "The World", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/ar21.jpg", meaning: "Hoàn thành, trọn vẹn." },
+    { name: "The Fool", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_00_Fool.jpg", meaning: "Khởi đầu mới, ngây thơ." },
+    { name: "The Magician", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_01_Magician.jpg", meaning: "Sức mạnh ý chí, sáng tạo." },
+    { name: "The High Priestess", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_02_High_Priestess.jpg", meaning: "Trực giác, bí ẩn." },
+    { name: "The Empress", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_03_Empress.jpg", meaning: "Sự trù phú, thiên nhiên." },
+    { name: "The Emperor", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_04_Emperor.jpg", meaning: "Quyền lực, cấu trúc." },
+    { name: "The Hierophant", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_05_Hierophant.jpg", meaning: "Truyền thống, niềm tin." },
+    { name: "The Lovers", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_06_Lovers.jpg", meaning: "Tình yêu, lựa chọn." },
+    { name: "The Chariot", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_07_Chariot.jpg", meaning: "Chiến thắng, quyết tâm." },
+    { name: "Strength", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_08_Strength.jpg", meaning: "Can đảm, kiên nhẫn." },
+    { name: "The Hermit", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_09_Hermit.jpg", meaning: "Soi sáng, cô độc." },
+    { name: "Wheel of Fortune", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_10_Wheel_of_Fortune.jpg", meaning: "Vận may, thay đổi." },
+    { name: "Justice", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_11_Justice.jpg", meaning: "Công bằng, sự thật." },
+    { name: "The Hanged Man", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_12_Hanged_Man.jpg", meaning: "Hy sinh, buông bỏ." },
+    { name: "Death", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_13_Death.jpg", meaning: "Kết thúc, tái sinh." },
+    { name: "Temperance", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_14_Temperance.jpg", meaning: "Cân bằng, kiên nhẫn." },
+    { name: "The Devil", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_15_Devil.jpg", meaning: "Cám dỗ, trói buộc." },
+    { name: "The Tower", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_16_Tower.jpg", meaning: "Sụp đổ, thức tỉnh." },
+    { name: "The Star", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_17_Star.jpg", meaning: "Hy vọng, niềm tin." },
+    { name: "The Moon", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_18_Moon.jpg", meaning: "Ảo tưởng, bất an." },
+    { name: "The Sun", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_19_Sun.jpg", meaning: "Niềm vui, thành công." },
+    { name: "Judgement", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_20_Judgement.jpg", meaning: "Thức tỉnh, tha thứ." },
+    { name: "The World", url: "https://commons.wikimedia.org/wiki/Special:FilePath/RWS_Tarot_21_World.jpg", meaning: "Hoàn thành, trọn vẹn." },
 
-    // WANDS
-    { name: "Ace of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/waac.jpg", meaning: "Sáng tạo mới." },
-    { name: "Two of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa02.jpg", meaning: "Lập kế hoạch." },
-    { name: "Three of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa03.jpg", meaning: "Mở rộng." },
-    { name: "Four of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa04.jpg", meaning: "Ăn mừng." },
-    { name: "Five of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa05.jpg", meaning: "Cạnh tranh." },
-    { name: "Six of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa06.jpg", meaning: "Chiến thắng." },
-    { name: "Seven of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa07.jpg", meaning: "Phòng thủ." },
-    { name: "Eight of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa08.jpg", meaning: "Tốc độ." },
-    { name: "Nine of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa09.jpg", meaning: "Kiên cường." },
-    { name: "Ten of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wa10.jpg", meaning: "Gánh nặng." },
-    { name: "Page of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wapa.jpg", meaning: "Khám phá." },
-    { name: "Knight of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/wakn.jpg", meaning: "Nhiệt huyết." },
-    { name: "Queen of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/waqu.jpg", meaning: "Tự tin." },
-    { name: "King of Wands", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/waki.jpg", meaning: "Lãnh đạo." },
+    // WANDS (14 lá)
+    { name: "Ace of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/1/11/Wands01.jpg", meaning: "Năng lượng mới, cảm hứng." },
+    { name: "Two of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Wands02.jpg", meaning: "Lên kế hoạch, quyết định." },
+    { name: "Three of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Wands03.jpg", meaning: "Viễn cảnh xa, mở rộng." },
+    { name: "Four of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Wands04.jpg", meaning: "Ăn mừng, ổn định." },
+    { name: "Five of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Wands05.jpg", meaning: "Cạnh tranh, xung đột nhẹ." },
+    { name: "Six of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Wands06.jpg", meaning: "Thắng lợi, được công nhận." },
+    { name: "Seven of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Wands07.jpg", meaning: "Tự vệ, kiên định." },
+    { name: "Eight of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Wands08.jpg", meaning: "Tốc độ, hành động nhanh." },
+    { name: "Nine of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Wands09.jpg", meaning: "Kiên trì, nỗ lực cuối." },
+    { name: "Ten of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Wands10.jpg", meaning: "Gánh nặng, trách nhiệm." },
+    { name: "Page of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Wands11.jpg", meaning: "Tin tức mới, sự tò mò." },
+    { name: "Knight of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/1/16/Wands12.jpg", meaning: "Nhiệt huyết, phiêu lưu." },
+    { name: "Queen of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Wands13.jpg", meaning: "Tự tin, quyến rũ." },
+    { name: "King of Wands", url: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Wands14.jpg", meaning: "Lãnh đạo, tầm nhìn." },
 
-    // CUPS
-    { name: "Ace of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cuac.jpg", meaning: "Tình cảm mới." },
-    { name: "Two of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu02.jpg", meaning: "Gắn kết." },
-    { name: "Three of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu03.jpg", meaning: "Tiệc tùng." },
-    { name: "Four of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu04.jpg", meaning: "Thờ ơ." },
-    { name: "Five of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu05.jpg", meaning: "Mất mát." },
-    { name: "Six of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu06.jpg", meaning: "Kỷ niệm." },
-    { name: "Seven of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu07.jpg", meaning: "Lựa chọn." },
-    { name: "Eight of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu08.jpg", meaning: "Rời đi." },
-    { name: "Nine of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu09.jpg", meaning: "Hài lòng." },
-    { name: "Ten of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cu10.jpg", meaning: "Hạnh phúc." },
-    { name: "Page of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cupa.jpg", meaning: "Sáng tạo." },
-    { name: "Knight of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cukn.jpg", meaning: "Lãng mạn." },
-    { name: "Queen of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cuqu.jpg", meaning: "Thấu cảm." },
-    { name: "King of Cups", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/cuki.jpg", meaning: "Cân bằng." },
+    // CUPS (14 lá)
+    { name: "Ace of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/3/36/Cups01.jpg", meaning: "Tình cảm mới, hạnh phúc." },
+    { name: "Two of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Cups02.jpg", meaning: "Kết nối, đối tác." },
+    { name: "Three of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Cups03.jpg", meaning: "Tiệc tùng, cộng đồng." },
+    { name: "Four of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/3/35/Cups04.jpg", meaning: "Thờ ơ, bỏ lỡ cơ hội." },
+    { name: "Five of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Cups05.jpg", meaning: "Thất vọng, buồn bã." },
+    { name: "Six of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/1/17/Cups06.jpg", meaning: "Hoài niệm, sự hồn nhiên." },
+    { name: "Seven of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Cups07.jpg", meaning: "Nhiều lựa chọn, ảo tưởng." },
+    { name: "Eight of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/a/af/Cups08.jpg", meaning: "Rời đi, tìm hướng mới." },
+    { name: "Nine of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/2/24/Cups09.jpg", meaning: "Mãn nguyện, ước nguyện thành hiện thực." },
+    { name: "Ten of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Cups10.jpg", meaning: "Gia đình viên mãn." },
+    { name: "Page of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cups11.jpg", meaning: "Tin tức tình cảm, nhạy cảm." },
+    { name: "Knight of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Cups12.jpg", meaning: "Lời mời lãng mạn." },
+    { name: "Queen of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/6/62/Cups13.jpg", meaning: "Thấu cảm, trực giác." },
+    { name: "King of Cups", url: "https://upload.wikimedia.org/wikipedia/commons/0/04/Cups14.jpg", meaning: "Kiểm soát cảm xúc." },
 
-    // SWORDS
-    { name: "Ace of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/swac.jpg", meaning: "Sự thật." },
-    { name: "Two of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw02.jpg", meaning: "Bế tắc." },
-    { name: "Three of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw03.jpg", meaning: "Đau lòng." },
-    { name: "Four of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw04.jpg", meaning: "Nghỉ ngơi." },
-    { name: "Five of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw05.jpg", meaning: "Xung đột." },
-    { name: "Six of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw06.jpg", meaning: "Chuyển giao." },
-    { name: "Seven of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw07.jpg", meaning: "Chiến thuật." },
-    { name: "Eight of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw08.jpg", meaning: "Bất lực." },
-    { name: "Nine of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw09.jpg", meaning: "Lo âu." },
-    { name: "Ten of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/sw10.jpg", meaning: "Phản bội." },
-    { name: "Page of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/swpa.jpg", meaning: "Nhạy bén." },
-    { name: "Knight of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/swkn.jpg", meaning: "Hành động." },
-    { name: "Queen of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/swqu.jpg", meaning: "Độc lập." },
-    { name: "King of Swords", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/swki.jpg", meaning: "Kỷ luật." },
+    // SWORDS (14 lá)
+    { name: "Ace of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Swords01.jpg", meaning: "Sự thật, đột phá ý tưởng." },
+    { name: "Two of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Swords02.jpg", meaning: "Bế tắc, lựa chọn khó khăn." },
+    { name: "Three of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/0/02/Swords03.jpg", meaning: "Đau lòng, sự chia ly." },
+    { name: "Four of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Swords04.jpg", meaning: "Nghỉ ngơi, hồi phục." },
+    { name: "Five of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/2/23/Swords05.jpg", meaning: "Thắng lợi cay đắng, tư lợi." },
+    { name: "Six of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/2/29/Swords06.jpg", meaning: "Chuyển giao, giải thoát." },
+    { name: "Seven of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/3/34/Swords07.jpg", meaning: "Chiến thuật, sự lừa dối." },
+    { name: "Eight of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Swords08.jpg", meaning: "Bất lực, bị giam cầm." },
+    { name: "Nine of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Swords09.jpg", meaning: "Lo âu, mất ngủ." },
+    { name: "Ten of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Swords10.jpg", meaning: "Kết thúc đau đớn, chạm đáy." },
+    { name: "Page of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Swords11.jpg", meaning: "Sự tò mò, giao tiếp sắc sảo." },
+    { name: "Knight of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Swords12.jpg", meaning: "Hành động nhanh, thiếu kiên nhẫn." },
+    { name: "Queen of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Swords13.jpg", meaning: "Độc lập, rõ ràng." },
+    { name: "King of Swords", url: "https://upload.wikimedia.org/wikipedia/commons/3/33/Swords14.jpg", meaning: "Quyền uy trí tuệ, công lý." },
 
-    // PENTACLES
-    { name: "Ace of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/peac.jpg", meaning: "Thực tế mới." },
-    { name: "Two of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe02.jpg", meaning: "Cân bằng." },
-    { name: "Three of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe03.jpg", meaning: "Hợp tác." },
-    { name: "Four of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe04.jpg", meaning: "Bảo thủ." },
-    { name: "Five of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe05.jpg", meaning: "Khó khăn." },
-    { name: "Six of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe06.jpg", meaning: "Hào phóng." },
-    { name: "Seven of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe07.jpg", meaning: "Kiên nhẫn." },
-    { name: "Eight of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe08.jpg", meaning: "Nỗ lực." },
-    { name: "Nine of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe09.jpg", meaning: "Thành quả." },
-    { name: "Ten of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pe10.jpg", meaning: "Thịnh vượng." },
-    { name: "Page of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pepa.jpg", meaning: "Học hỏi." },
-    { name: "Knight of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pekn.jpg", meaning: "Phương pháp." },
-    { name: "Queen of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/pequ.jpg", meaning: "Sung túc." },
-    { name: "King of Pentacles", url: "https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/peki.jpg", meaning: "Thành đạt." }
+    // PENTACLES (14 lá)
+    { name: "Ace of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Pents01.jpg", meaning: "Cơ hội tài chính mới." },
+    { name: "Two of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Pents02.jpg", meaning: "Cân bằng cuộc sống, thích nghi." },
+    { name: "Three of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/4/42/Pents03.jpg", meaning: "Làm việc nhóm, kỹ năng." },
+    { name: "Four of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/3/35/Pents04.jpg", meaning: "Giữ chặt tài sản, sự bảo thủ." },
+    { name: "Five of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/9/96/Pents05.jpg", meaning: "Nghèo khó, sự cô lập." },
+    { name: "Six of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pents06.jpg", meaning: "Sự rộng lượng, cho và nhận." },
+    { name: "Seven of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Pents07.jpg", meaning: "Kiên nhẫn, chờ đợi thành quả." },
+    { name: "Eight of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/4/49/Pents08.jpg", meaning: "Rèn luyện, sự chăm chỉ." },
+    { name: "Nine of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Pents09.jpg", meaning: "Độc lập tài chính, sung túc." },
+    { name: "Ten of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/4/42/Pents10.jpg", meaning: "Gia sản, sự thịnh vượng bền vững." },
+    { name: "Page of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pents11.jpg", meaning: "Học hỏi, kế hoạch mới." },
+    { name: "Knight of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Pents12.jpg", meaning: "Cẩn trọng, kiên định." },
+    { name: "Queen of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/8/88/Pents13.jpg", meaning: "Chăm sóc gia đình, ổn định." },
+    { name: "King of Pentacles", url: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Pents14.jpg", meaning: "Sự thành đạt, giàu có." }
 ];
 
 
@@ -294,7 +293,8 @@
             scene.add(spotLight);
 
             textureLoader = new THREE.TextureLoader();
-            particleTexture = generateParticleTexture(); 
+textureLoader.setCrossOrigin('anonymous'); 
+particleTexture = generateParticleTexture(); 
             
             shuffleArray(TAROT_DATA);
             createCards();
@@ -341,7 +341,7 @@
     const geo = new THREE.BoxGeometry(CONFIG.cardWidth, CONFIG.cardHeight, 0.02);
     
     // Link ảnh mặt lưng bài Tarot ổn định
-    const backTex = textureLoader.load('https://corsproxy.io/?https://sacred-texts.com/tarot/pkt/img/back.jpg');
+    const backTex = textureLoader.load('https://commons.wikimedia.org/wiki/Special:FilePath/Tarot_Back.jpg');
 
     TAROT_DATA.forEach((data, i) => {
         // Tải ảnh mặt trước
